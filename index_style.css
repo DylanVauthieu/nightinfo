@@ -1,42 +1,162 @@
-:root {
-  --green: #00FF00;
-  --white: #FFFFFF;
-  --black: #000000;
+body
+{
+	background-color: white;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.header
+{
+  padding: 30px;
+  text-align: center;
+  background: #F8DFBB;
 }
 
-.btn {
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+.header h1
+{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 4em;
+}
+
+.leftcolumn
+{
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn
+{
+  float: left;
+  width: 25%;
+  background-color: white;
+  padding-left: 20px;
+}
+
+.card
+{
+  background-color: #FFEBD3;
+  padding: 20px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.card1
+{
+  background-color: #F8F8B8;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px)
+{
+  .leftcolumn, .rightcolumn
+  {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  .topnav a
+  {
+    float: none;
+    width: 100%;
+  }
+}
+
+h2
+{
+	font-size: 2.2em;
+}
+
+h3
+{
+	font-size: 1.8em;
+}
+
+p
+{
+	font-size: 1.1em;
+}
+
+li
+{
+	font-size: 1.1em;
+}
+
+.topnav
+{
+	overflow: hidden;
+	background-image: linear-gradient(to bottom right, #00B022, #00FF00 );
+	position: sticky;
+	top: 0;
+	z-index: 3;
+}
+
+.topnav a
+{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	height: 50px;
+}
+
+.topnav button
+{
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.topnav button:hover
+{
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a:hover
+{
+	background-color: #ddd;
+	color: black;
+}
+
+.button
+{
+  background-color: transparent;
   border: none;
-  color: var(--btnFontColor);
-  background-color: var(--btnBg);
+  color: white;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
 }
 
-body {
-  background: var(--bg);
-  color: var(--fontColor);
-  font-family: helvetica;
+*
+{
+  box-sizing: border-box;
 }
 
-.light-theme {
-  --bg: var(--white);
-  --fontColor: var(--black);
-  --btnBg: var(--black);
-  --btnFontColor: var(--white);
+.schéma
+{
+	float: left;
 }
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--white);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
+
+.schéma_text
+{
+	margin: 90px;
 }
