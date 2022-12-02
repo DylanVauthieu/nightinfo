@@ -3,9 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>sida life</title>
-        <link rel="stylesheet" href="../movais/movais.css">
+        <link rel="stylesheet" href="../css/movais.css">
+        <link rel="stylesheet" href="../css/stylesheet.css">
     </head>
     <body class="element">
+        <div class="parent">
+            <div class="nav-bar">
+              <ul class="navigation-bar">
+                <input class="hamburger-button" type="checkbox" id="menu-toggle" onclick="hideOrShow()">
+                <label id="menu-toggle-2" class="menu-button-container hamburger-button" for="menu-toggle"><div class="menu-button"></div></label>
+                <div class="menu">
+                  <li id="button-1" ><a href="../index.html" data-hover="Accueil" onclick="actualizeClass('button-1')">Accueil</a></li>
+                  <li id="button-2"><a href="../qcm/qcm.html" data-hover="QCM" onclick="actualizeClass('button-2')">QCM</a></li>
+                  <li id="button-3"><a href="../Video_page/video.html" data-hover="Vidéo" onclick="actualizeClass('button-3')">Vidéo</a></li>
+                  <li id="button-4" class="current"><a class="home-link" href="movais.html" data-hover="movais" onclick="actualizeClass('button-4')">movais</a></li>
+                </div>
+              </ul>
+            </div>
+        </div>
         <h1><strike>Notre titre pour le sida</strike></h1>
         <p><strike> Je suis sida</strike></p>
         <h2><strike>test sida 100% gratui</strike></h2>
