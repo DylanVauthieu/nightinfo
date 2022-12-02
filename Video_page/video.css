@@ -1,0 +1,21 @@
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+   }
+.video-responsive iframe {
+    padding-left: 25%;
+    padding-top: 5%;
+    left:0;
+    top:0;
+    height:50%;
+    width:50%;
+    position:absolute;
+   }
+
+.text {
+    padding-left: 35%;
+    padding-top: 5%;
+    font-feature-settings:"bellania.ttf";
+   }
