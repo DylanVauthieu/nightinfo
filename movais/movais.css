@@ -1,0 +1,16 @@
+h1 {
+    color:darksalmon;
+    font-size:20cm;
+}
+
+body {
+    background-color:black;
+    color: rgb(250, 46, 75);
+}
+
+.element {
+    border-top: 30px #EB5353 dotted;
+    border-right: 30px #F9D923 double;
+    border-bottom: 30px #36AE7C dashed;
+    border-left: 30px #187498 solid;
+}
