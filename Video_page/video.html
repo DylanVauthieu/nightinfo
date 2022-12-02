@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
+    <style></style>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Auguste Vidéo</title>
     <link rel="stylesheet" href="./video.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
 </head>
-<body>
-    <<Body background="https://external-preview.redd.it/LRmT8yJPpoqGulM3_Js5IskqmxqPwgb196NFUtX08oY.jpg?auto=webp&s=8cafc04e8600b49eee044ec92d833b986e2c33d9">  
+<body background="https://external-preview.redd.it/LRmT8yJPpoqGulM3_Js5IskqmxqPwgb196NFUtX08oY.jpg?auto=webp&s=8cafc04e8600b49eee044ec92d833b986e2c33d9">
+    <!-- navBar -->
+    <div class="parent">
+        <div class="nav-bar">
+          <ul class="navigation-bar">
+            <input class="hamburger-button" type="checkbox" id="menu-toggle" onclick="hideOrShow()">
+            <label id="menu-toggle-2" class="menu-button-container hamburger-button" for="menu-toggle"><div class="menu-button"></div></label>
+            <div class="menu">
+              <li id="button-1" ><a href="../index.html" data-hover="Accueil" onclick="actualizeClass('button-1')">Accueil</a></li>
+              <li id="button-2"><a href="../qcm/qcm.html" data-hover="QCM" onclick="actualizeClass('button-2')">QCM</a></li>
+              <li id="button-3" class="current"><a class="home-link" href="video.html" data-hover="Vidéo" onclick="actualizeClass('button-3')">Vidéo</a></li>
+              <li id="button-4"><a href="../movais/movais.html" data-hover="movais" onclick="actualizeClass('button-4')">movais</a></li>
+            </div>
+          </ul>
+        </div>
+    </div>
     <h1 class = text>La super vidéo résumant cette aventure</h1>
     <div class="video-responsive">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bKxZggS5Aj8"
-        frameborder="" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 </body>
 </html>
