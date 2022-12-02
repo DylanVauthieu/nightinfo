@@ -1,11 +1,9 @@
 function changeColor() {
-    const counter = Math.random;
-    if (counter == 1) {
+    const nb = Math.random;
+    if (nb == 1) {
         document.body.style.backgroundColor = "green";
-        counter++;
-    } else {
-        document.body.style.backgroundColor = "red";
-        counter++;
     }
-    counter++;
+    if (nb == 0) {
+        document.body.style.backgroundColor = "red";
+    }
 }
