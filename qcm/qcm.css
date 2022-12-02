@@ -138,8 +138,8 @@
 
 #score-container {
   position: fixed;
-  right: 40px;
-  top: 40px;
+  right: 100px;
+  top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
