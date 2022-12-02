@@ -8,9 +8,15 @@ function changeColor() {
     const nb = getRandomInt(0, 2);
     if (nb == 1) {
         document.body.style.backgroundColor = "green";
+        const elem = document.createElement("h1")
+        elem.innerHTML = "PAS SIDA"
+        document.body.appendChild(elem);    
     }
     if (nb == 0) {
         document.body.style.backgroundColor = "red";
+        const elem = document.createElement("h1")
+        elem.innerHTML = "SIDA"
+        document.body.appendChild(elem);
     }
 }
 
