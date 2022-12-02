@@ -4,18 +4,35 @@
 <head>
 
   <!--  Meta  -->
-  <meta charset="UTF-8" />
-  <title>My New Pen!</title>
+  <style></style>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sida Burger</title>
 
   <!--  Styles  -->
   <link rel="stylesheet" href="qcm.css">
-  <!--link rel="stylesheet" href="styles/style.css"-->
+  <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 
 <body>
+  <div class="parent">
+    <div class="nav-bar">
+      <ul class="navigation-bar">
+        <input class="hamburger-button" type="checkbox" id="menu-toggle" onclick="hideOrShow()">
+        <label id="menu-toggle-2" class="menu-button-container hamburger-button" for="menu-toggle"><div class="menu-button"></div></label>
+        <div class="menu">
+          <li id="button-1" ><a href="../index.html" data-hover="Accueil" onclick="actualizeClass('button-1')">Accueil</a></li>
+          <li id="button-2" class="current"><a class="home-link" href="../qcm/qcm.html" data-hover="QCM" onclick="actualizeClass('button-2')">QCM</a></li>
+          <li id="button-3"><a href="../video" data-hover="Vidéo" onclick="actualizeClass('button-3')">Vidéo</a></li>
+          <li id="button-4"><a href="../movais/movais.html" data-hover="movais" onclick="actualizeClass('button-4')">movais</a></li>
+        </div>
+      </ul>
+    </div>
+  <br>
+  <br>
   <div id="app-container">
     <div id="score-container">Score: 0</div>
-    <h2 id="app-title">QCM</h2>
     <div id="questions-container"></div>
   </div>
 

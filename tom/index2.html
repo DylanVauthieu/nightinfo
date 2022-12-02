@@ -1,0 +1,31 @@
+<html lang="fr">
+<head>
+    <!-- Init Charset -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add Bootstrap & other dependeces-->
+      <link rel="stylesheet" href="css/stylesheet.css">
+
+
+      <title>Stras'Bouge</title>
+  </head>
+  <body>
+    <!-- navBar -->
+    <div class="parent">
+      <div class="nav-bar">
+        <ul class="navigation-bar">
+          <input class="hamburger-button" type="checkbox" id="menu-toggle" onclick="hideOrShow()">
+          <label id="menu-toggle-2" class="menu-button-container hamburger-button" for="menu-toggle"><div class="menu-button"></div></label>
+          <div class="menu">
+            <li id="button-1" class="current"><a class="home-link" href="index.html" data-hover="Accueil" onclick="actualizeClass('button-1')">Accueil</a></li>
+            <li id="button-2"><a href="information.html" data-hover="Informations" onclick="actualizeClass('button-2')">Informations</a></li>
+            <li id="button-3"><a href="projet.html" data-hover="Projet" onclick="actualizeClass('button-3')">Projet</a></li>
+            <li id="button-4"><a href="evenement.html" data-hover="Evènements" onclick="actualizeClass('button-4')">Evènements</a></li>
+            <li id="button-5"><a href="actualités.html" data-hover="Actualités" onclick="actualizeClass('button-5')">Actualités</a></li>
+            <li id="button-6"><a href="contact.html" data-hover="Contact" onclick="actualizeClass('button-6')">Contact</a></li>
+            <li id="button-7"><a href="soutenir.html" data-hover="Soutenir" onclick="actualizeClass('button-7')">Soutenir</a></li>
+          </div>
+        </ul>
+      </div>
+  </body>
