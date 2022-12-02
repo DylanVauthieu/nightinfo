@@ -6,10 +6,6 @@
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-
-    <link rel="stylesheet" href="./css/index_style.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/layout.css">
 </head>
 <body>
     <!-- navBar -->
@@ -23,7 +19,7 @@
               <li id="button-2"><a href="./qcm/qcm.html" data-hover="QCM" onclick="actualizeClass('button-2')">QCM</a></li>
               <li id="button-3"><a href="./Video_page/video.html" data-hover="Vidéo" onclick="actualizeClass('button-3')">Vidéo</a></li>
               <li id="button-4"><a href="./movais/movais.html" data-hover="movais" onclick="actualizeClass('button-4')">movais</a></li>
-              <li id="button-5"><a href="./register.html" data-hover="register" onclick="actualizeClass('button-5')">movais</a></li>
+              <li id="button-5"><a href="./register.html" data-hover="register" onclick="actualizeClass('button-5')">register</a></li>
             </div>
           </ul>
         </div>
@@ -31,8 +27,8 @@
 
   <h1>Les inscrits !</h1>
 
-  <?
-    mysql_connect("mysql-vihpourlesnuls.alwaysdata.net","291412_root","bdd07052004*") or die("Impossible de se connecter");;
+  <php
+    mysql_connect("mysql-vihpourlesnuls.alwaysdata.net","291412_root","bdd07052004*") or die("Impossible de se connecter");
     mysql_select_db("vihpourlesnuls_bdd") or die("pas possible de trouver la base");
 
     $result = mysql_query("SELECT * FROM user");
